@@ -4,9 +4,10 @@ import { WakFightEnmap } from "../interfaces/enmap"
 import { Client, Guild, User } from "discord.js"
 import DataList from "../entities/DataList"
 import Personnage from "../entities/Personnage"
-import Talent from "../entities/Talent"
+import Talent from "../entities/Feature"
 import Temple from "../entities/Temple"
 import Player from "../entities/Player"
+import Dofus from "../entities/Dofus"
 
 // gestion des events du client
 // envoie aux books des infos selon les reactions (même pour la croix)
@@ -19,7 +20,8 @@ export default class WakFight {
         public players:Enmap = new Enmap({name:'players'}),
         public guilds:Enmap = new Enmap({name:'guilds'}),
         public personnages:DataList<Personnage> = new DataList('personnages'),
-        public talents:DataList<Talent> = new DataList('talents'),
+        public features:DataList<Talent> = new DataList('features'),
+        public dofus:DataList<Dofus> = new DataList('dofus'),
     ){
         const configData:WakFightEnmap = {
             debug: false

@@ -1,10 +1,10 @@
 import { Collection } from "discord.js"
-import { Data } from "./Data"
+import Data from "./Data"
 import { DataName } from "../interfaces/enums"
 import { promises as fs } from 'fs'
 import * as path from 'path'
 
-export class DataList<V> extends Collection<string,Data> {
+export default class DataList<V> extends Collection<string,Data> {
 
     constructor(
         public name:DataName

@@ -1,4 +1,4 @@
-import { Personnage } from "../../entities/Personnage";
+import Personnage from "../../entities/Personnage";
 
 module.exports = new Personnage({
     name: 'vampyro'

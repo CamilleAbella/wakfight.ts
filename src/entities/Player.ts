@@ -1,7 +1,7 @@
 import WakFight from "../app/WakFight"
 import { User, Collection } from "discord.js"
 import { PlayerEnmap } from "../interfaces/enmap"
-import { Personnage } from "./Personnage"
+import Personnage from "./Personnage"
 
 // contient également ses timers
 
@@ -14,10 +14,10 @@ export default class Player {
         const personnages:Collection<string,Personnage> = new Collection
         const firstPersonnage = wakfight.personnages.random() as Personnage
         personnages.set(firstPersonnage.name,firstPersonnage)
-        const playerData:PlayerEnmap = {
+        const playerEnmap:PlayerEnmap = {
             personnages
         }
-        wakfight.players.ensure(user.id, playerData)
+        wakfight.players.ensure(user.id, playerEnmap)
     }
 
 }

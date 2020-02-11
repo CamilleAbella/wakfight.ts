@@ -1,5 +1,5 @@
 
-export class Data {
+export default class Data {
 
     constructor(){}
 

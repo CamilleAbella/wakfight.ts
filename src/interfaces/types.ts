@@ -1,5 +1,4 @@
-import { HookName } from "./enums";
-import { MessageEmbedField } from "discord.js";
+import { HookName } from "./enums"
 
 export interface BaseData {
     name: string
@@ -24,4 +23,8 @@ export interface Field {
     name:string
     value: string
     inline?: boolean
+}
+
+export interface Turn {
+    
 }

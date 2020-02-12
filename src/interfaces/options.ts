@@ -1,6 +1,8 @@
 import { BaseData, Actionnable } from "./types";
+import { ClasseName } from "./enums";
 
 export interface PersonnageOptions extends BaseData {
+    classe: ClasseName
     isMan: boolean
     PV: number
     AT: number

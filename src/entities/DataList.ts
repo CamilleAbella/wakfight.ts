@@ -14,6 +14,10 @@ export default class DataList<V> extends Collection<string,Data> {
         return this.random() as V
     }
 
+    public getItem( key:string ): V {
+        return this.get(key) as V
+    }
+
     private load( key:string, value:V ): DataList<V> {
         this.set(key,value)
         return this

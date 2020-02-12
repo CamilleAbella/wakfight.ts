@@ -2,11 +2,13 @@ import Data from "./Data"
 import { PersonnageOptions } from "../interfaces/options"
 
 export default class Personnage extends Data implements PersonnageOptions {
-
+    
+    isMan: boolean
+    PV: number
+    AT: number
+    PA: number
+    image: string
     description: string
-    health: number
-    force: number
-    speed: number
     features: string[]
     name: string
 

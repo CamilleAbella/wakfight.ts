@@ -1,27 +1,15 @@
-import { HookName } from "./enums";
+import { BaseData, Actionnable } from "./types";
 
-export interface PersonnageOptions {
+export interface PersonnageOptions extends BaseData {
     isMan: boolean
-    name: string
-    description: string
-    health: number
-    force: number
-    speed: number,
+    PV: number
+    AT: number
+    PA: number,
     features: string[]
 }
 
-export interface FeatureOptions {
-    name: string
-    description: string
-    hooks: HookName[],
-    conditions: { [id:string]:Function } | Function
-    actions: { [id:string]:Function } | Function
-    values?: { [id:string]:number|boolean|string }
+export interface FeatureOptions extends Actionnable, BaseData {
 }
 
-export interface DofusOptions {
-    name: string
-    description: string
-    conditions: { [id:string]:Function } | Function
-    actions: { [id:string]:Function } | Function
+export interface DofusOptions extends Actionnable, BaseData {
 }

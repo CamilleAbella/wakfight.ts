@@ -1,4 +1,4 @@
 
 export type DataName = 'features' | 'personnages' | 'dofus'
-export type StatName = 'force' | 'speed' | 'health'
-export type HookName = 'before attack' | 'after attack' | 'attack'
+export type StatName = 'AT' | 'PA' | 'PV'
+export type HookName = 'before attack' | 'after attack' | 'attack' | 'constant' | 'after damage'

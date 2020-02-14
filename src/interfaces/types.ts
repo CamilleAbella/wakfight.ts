@@ -1,6 +1,7 @@
 import { HookName } from "./enums"
 
 export interface BaseData {
+    id: string
     name: string
     description: string
     image: string

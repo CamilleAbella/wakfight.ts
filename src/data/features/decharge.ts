@@ -4,6 +4,7 @@ import Fight from "../../entities/Fight"
 import Fighter from "../../entities/Fighter"
 
 const options:FeatureOptions = {
+    id: 'decharge',
     name: 'Décharge de wakfu',
     description: "Lorsqu'{il} attaque, {name} a **1/3 chances** de doubler les dégats de son attaque. Si c'est le cas, {il} perd **{debuff}%** de son *AT* et de ses *PA*.",
     image: 'https://static.ankama.com/wakfu/portal/game/spell/4691.png',

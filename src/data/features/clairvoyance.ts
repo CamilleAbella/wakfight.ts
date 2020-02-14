@@ -4,6 +4,7 @@ import Fight from "../../entities/Fight"
 import Fighter from "../../entities/Fighter"
 
 const options:FeatureOptions = {
+    id: 'clairvoyance',
     name: 'Clarvoyance',
     description: "peut annuler des attaques et peut trouver le point faible",
     image: 'https://static.ankama.com/wakfu/portal/game/spell/866.png',

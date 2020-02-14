@@ -1,5 +1,6 @@
 import Player from "./Player"
 import { Page, Turn } from "../interfaces/types"
+import WakFight from "../app/WakFight"
 
 export default class Fight {
     
@@ -7,6 +8,7 @@ export default class Fight {
     private turns:Turn[]
 
     constructor( 
+        public wakfight:WakFight,
         public players:Player[] 
     ){
         

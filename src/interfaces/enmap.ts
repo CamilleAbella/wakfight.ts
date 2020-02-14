@@ -2,7 +2,10 @@ import { Collection } from "discord.js"
 import Personnage from "../entities/Personnage"
 
 export interface PlayerEnmap {
-    personnages: Collection<string,Personnage>
+    personnages: string[]
+    personnage: string
+    dofusList: string[],
+    dofus: string | null
 }
 
 export interface GuildEnmap {

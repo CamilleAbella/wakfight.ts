@@ -30,9 +30,9 @@ export default class WakFight {
         configs.ensure('config', configData)
     }
 
-    public getPersonnage( name:string ): Personnage { return this.personnages.getItem(name) }
-    public getFeature( name:string ): Feature { return this.features.getItem(name) }
-    public getDofus( name:string ): Dofus { return this.dofus.getItem(name) }
+    public getPersonnage( id:string ): Personnage { return this.personnages.getItem(id) }
+    public getFeature( id:string ): Feature { return this.features.getItem(id) }
+    public getDofus( id:string ): Dofus { return this.dofus.getItem(id) }
     public getTemple( guild:Guild ): Temple { return new Temple( this, guild ) }
     public getPlayer( user:User ): Player { return new Player( this, user ) }
 

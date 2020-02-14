@@ -11,13 +11,28 @@ export default class Player {
         private wakfight:WakFight,
         public user:User
     ){
-        const personnages:Collection<string,Personnage> = new Collection
         const firstPersonnage = wakfight.personnages.random() as Personnage
-        personnages.set(firstPersonnage.name,firstPersonnage)
         const playerEnmap:PlayerEnmap = {
-            personnages
+            personnages: [firstPersonnage.id],
+            personnage: firstPersonnage.id,
+            dofusList: [],
+            dofus: null
         }
         wakfight.players.ensure(user.id, playerEnmap)
+    }
+
+    get personnages():string[] { return this.wakfight.players.getProp(this.user.id, 'personnages') }
+    get personnage():string { return this.wakfight.players.getProp(this.user.id,'personnage') }
+    set personnage( id:string ){ 
+        if(this.personnages.includes(id))
+        this.wakfight.players.setProp(this.user.id,'personnage',id)
+    }
+
+    get dofusList():string[] { return this.wakfight.players.getProp(this.user.id, 'dofusList') }
+    get dofus():string { return this.wakfight.players.getProp(this.user.id,'dofus') }
+    set dofus( id:string ){
+        if(this.dofusList.includes(id))
+        this.wakfight.players.setProp(this.user.id,'dofus',id)
     }
 
 }

@@ -4,6 +4,7 @@ import Fighter from "../../entities/Fighter"
 import Dofus from "../../entities/Dofus"
 
 const options:DofusOptions = {
+    id: 'pourpre',
     name: 'Dofus Pourpre',
     description: "Quand votre personnage reçoit des dégats, son *AT* augmente de **{buff}%**. (max **{max}%**)",
     image: 'https://static.ankama.com/dofus/www/game/items/200/23001.png',

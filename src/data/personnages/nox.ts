@@ -4,6 +4,7 @@ import { PersonnageOptions } from "../../interfaces/options";
 
 const options:PersonnageOptions = {
     isMan: true,
+    id: 'nox',
     name: 'Nox',
     classe: 'xelor',
     description: 'Il est de retour pour combler sa soif de wakfu !',

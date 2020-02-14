@@ -4,6 +4,7 @@ import Fight from "../../entities/Fight"
 import Fighter from "../../entities/Fighter"
 
 const options:FeatureOptions = {
+    id: 'extraction',
     name: 'Extraction du wakfu',
     description: "Avant d'attaquer, {name} absorbe (**{inc}** + *nombre d'attaques*) pourcents de l'*AT* et des *PA* adverse. (max **{max}%**)",
     image: 'https://static.ankama.com/wakfu/portal/game/spell/4680.png',
